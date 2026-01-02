@@ -181,4 +181,50 @@
 # a = "yashvi"
 
 # print(type(a))
-print("hello  v")
+# print("hello  v")
+
+
+#input in python
+
+
+# name = input("Enter yout name:")
+# print("welcome", name)
+
+# val = input("Enter some value:")
+# print(type(val), val)
+
+# name = input("Enter your name:")
+# age = int(input("Enter your age:"))
+# marks = float(input("Enter your marks:"))
+# # print(type(name), name, type(age), age, type(marks), marks)
+
+# print("welcome", name)
+# print("your age is", age)
+# print("your marks are", marks)
+
+#write a program to input 2 numbers & print their sum.
+
+# val1 = int(input("Enter first value:"))
+# val2 = int(input("Enter second value:"))
+# sum = val1 + val2
+# print("sum is:", sum)
+
+#write a program input side of a square & print its area.
+
+# side = float(input("Enter square side:"))
+# print("area = ", side * side)
+
+#Write a program to input 3 floating point numbers & print their average.
+
+# a = float(input("Enter first value:"))
+# b = float(input("Enter second value:"))
+# c = float(input("Enter third value:"))
+# avg = (a + b + c) / 3
+# print("average is:", avg)
+
+#write a program to input 2 int number a and b. & print True if a is greaten than or equal to b, if not print False.
+
+# a = int(input("Enter First Value:"))
+# b = int(input("Enter Second Value:"))
+# print(a >= b)
+

@@ -45,3 +45,29 @@
 # print(str[:-7])   # Vaibhav
 # print(str[-7:-1]) # Chauha
 # print(str[-15:]) # Vaibhav Chauhan
+
+#string functions
+
+str = "i am studying from sltiet"
+#print(str.endswith("ET")) # True
+#print(str.capitalize()) # I am studying from sltiet
+# str = str.capitalize()
+# print(str)
+# print(str.replace("i am","Vaibhav Chauhan is")) # Vaibhav Chauhan is studying from SLTIET
+# print(str.find("t"))
+# print(str.count("t"))
+# print(str.upper()) # I AM STUDYING FROM SLTIET
+# print(str.lower()) # i am studying from sltiet
+
+#Write a program to user's first name & print its length.
+
+# str = ("vaibhav chauhan")
+# print("length of string is :",len(str))
+
+# name = input("Enter your first name:")
+# print("length of your first name is:", len(name))
+
+#write a program to find occurrence of '@' in a string.
+
+# str = "vaibhav@chauhan , yashvi@sidapara , megh@vyas"
+# print(str.count("@"))

@@ -23,14 +23,14 @@
 
 #nested dictionary
 
-student = {
-    "name" : "rahul kumar",
-    "subjects" : {
-        "phy" : 97,
-        "chem" : 98,
-        "math" : 95
-    }
-}
+# student = {
+#     "name" : "rahul kumar",
+#     "subjects" : {
+#         "phy" : 97,
+#         "chem" : 98,
+#         "math" : 95
+#     }
+# }
 #print(student["subjects"])
 
 #dictionary methods
@@ -56,3 +56,16 @@ student = {
 # new_dict = {"city" : "delhi"}
 # student.update(new_dict)
 # print(student)
+
+#store following word meanings in a python dictionary:
+
+# vaibhav = {
+#     "table" : "a peace of furniture,list of facts & figures", 
+
+#     "cat" : {
+#         "cat" : "a small animal"
+
+#     }
+# }
+
+# print(vaibhav["cat"])

@@ -131,3 +131,44 @@
 #     print(char)
 # else:
 #     print("End of string")    
+
+#print the elements of the following list using for loop:
+#[1,4,9,16,25,36,49,64,81,100]
+
+# value = [1,4,9,16,25,36,49,64,81,100]
+
+# for val in value:
+#     print(val)
+
+
+# nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+# biradar = int(input("enter number to search:"))
+# for i in nums:
+#     if(i == biradar):
+#         print("BIRADAR FOUND")
+#         break
+#     else:
+#         print("THIS IS NOT MY BIRADAR")    
+ 
+#search for a number x in this tuple using loop:
+#(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+# nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 16, 64, 16)
+# x = 16
+
+# index = 0
+# for num in nums:
+#     if (num == x):
+#         print("found at index", index)
+#     index += 1
+
+#range() function
+#Range functions returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops beforea specified number.
+
+seq = range(10)
+
+for i in seq:
+    print(i)
+
+

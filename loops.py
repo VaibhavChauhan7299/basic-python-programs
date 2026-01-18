@@ -101,6 +101,33 @@
 # i = 1
 # while i<=10:
 #     print(i)
-#     if (i==5):
+#     if (i == 5):
 #         break
-#     i+=1
+#     i += 1
+
+# i = 0
+# while i<10:
+#     if(i%2 != 0):
+#         i += 1
+#         continue #skip
+#     print(i)
+#     i += 1
+
+#loop are used for sequential traversal. for traversing list, string, tuples etc..
+
+# names = ["Vaibhav", "Yashu", "Anuj", "Ritik"]
+# for name in names:
+#      print(name)
+
+# tuple1 = (1, 2, 3, 4, 5)
+# for num in tuple1:
+#     print(num)
+
+#when we work on itretors so using while loop.
+#when datatypes on travers so using for loop.
+
+# str = "Hello Vaibhav"
+# for char in str:
+#     print(char)
+# else:
+#     print("End of string")    

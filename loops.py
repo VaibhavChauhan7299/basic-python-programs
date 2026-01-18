@@ -166,9 +166,9 @@
 #range() function
 #Range functions returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops beforea specified number.
 
-seq = range(10)
+# seq = range(10)
 
-for i in seq:
-    print(i)
+# for i in seq:
+#     print(i)
 
 

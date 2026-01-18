@@ -80,3 +80,27 @@
 #     i += 1
 
 #search for a number x in this tuple using loop:
+
+# nums = (10, 23, 45, 70, 11, 3, 99, 34, 67)
+
+# x = 70
+
+# i = 0
+# while i<len(nums):
+#     if(nums[i] == x):
+#         print("Found at index", i)
+#         break
+#     else:
+#         print("finding...")    
+#     i += 1
+# print("End of loop")
+
+#Break: used to terminate the loop when encountered.
+#Continue: terinates execution in the current iteration & continues execution of the loop with next iteration.
+
+# i = 1
+# while i<=10:
+#     print(i)
+#     if (i==5):
+#         break
+#     i+=1

@@ -151,7 +151,7 @@
 #     else:
 #         print("THIS IS NOT MY BIRADAR")    
  
-#search for a number x in this tuple using loop:
+#search for a number x in this tuple using loop: #linear search
 #(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 
 # nums = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 16, 64, 16)
@@ -172,3 +172,90 @@
 #     print(i)
 
 
+#range(start?, stop, step?
+
+# for i in range(10): #range(stop)
+#     print(i)
+
+# for i in range(2, 10): #range(start, stop)
+#     print(i)    
+
+# for i in range (2, 10, 2): #range(start, stop, step)
+#     print(i)    
+
+# for i in range(2, 101, 2):
+#     print(i)
+
+#print number from 1 to 100.
+
+# for i in range(1 ,101):
+#     print(i)
+
+
+#print number from 100 to 1
+# for i in range(101, 0, -1):
+#     print(i)
+
+#print the multiplication table of a number n.
+
+# n = int(input("Enter the number:"))
+
+# for i in range(1, 11):
+#     print(n, "x", i, "=", n*i)
+
+#pass statement
+#pass is a null statement that dsoes nothing. it it used as a placeholder for future code.
+
+# for i in range(5):
+#     pass
+
+# if i > 5:
+#     pass
+
+# print("Hello Vaibhav")
+
+#write a program to find sum of first n numbers.(using for)
+#for
+
+# n = 100
+
+# sum = 0
+
+# for i in range(1, n+1):
+#     sum += i
+#     print("total sum = ", sum)
+
+#using while
+
+# n = 100
+
+# sum = 0
+# i = 1
+
+# while i <= n:
+#     sum += i
+#     i += 1
+#     print("total sum =", sum)
+
+#write a program to find factorial of first n numbers.(using while)
+#using while
+# 5! = 5x4x3x2x1 = 120
+# n = 5
+
+# factorial = 1
+
+# i = 1 
+
+# while i <=n:
+#     factorial *= i
+#     i += 1
+# print("Factorial =", factorial)
+
+#using for
+
+# n = 10
+# factorial = 1
+
+# for i in range(1, n+1):
+#     factorial *= i
+# print("Factorial =", factorial)

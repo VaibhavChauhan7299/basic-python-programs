@@ -57,8 +57,8 @@
 #(You can take help of built-in data types)
 
 #solutuion-1
-values = {9, "9.0"}
-print(values)
+# values = {9, "9.0"}
+# print(values)
 
 #solution-2
 

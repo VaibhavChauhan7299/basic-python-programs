@@ -155,3 +155,29 @@
 # converter(100)
 # converter(250.5)
 # converter(50)
+
+#write a function to user input check number is even or odd . (n is the parameter)
+
+# def check_even_odd(i):
+#     if n % 2 == 0:
+#         print(n, "is Even")
+#     else:
+#         print(n, "is Odd")
+#     return
+
+# n = int(input("Enter a number: "))
+# check_even_odd(n)
+
+
+
+#Recursion
+#when a function calls itself repeatedly.
+
+# def show(n):
+#     if(n == 0): #base case
+#         return
+#     print(n)
+#     show(n-1)
+
+# show(5)
+

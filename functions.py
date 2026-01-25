@@ -178,6 +178,14 @@
 #         return
 #     print(n)
 #     show(n-1)
-
+#     print(END)
 # show(5)
 
+
+# def factorial(n):
+#     if(n == 0 or n == 1): #base case
+#         return 1
+#     return factorial(n-1) * n
+
+# result = factorial(5)
+# print("Factorial =", result)

@@ -189,3 +189,25 @@
 
 # result = factorial(5)
 # print("Factorial =", result)
+
+#write a recursive function to calculate the sum of first n natural numbers.
+
+# def sum_n(n):
+#     if n == 0: #base case
+#         return 0 
+#     return sum_n(n-1) + n
+
+# result = sum_n(5)
+# print("Sum of first n natural numbers =", result)
+
+#write a recursive function to print all elements in a list.
+#hint: use list & index as parameters.
+
+# def print_list(list, index):
+#     if index == len(list): #base case
+#         return
+#     print(list[index])
+#     print_list(list, index + 1)
+
+# fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"]
+# print_list(fruits, 0)

@@ -70,3 +70,100 @@
 # r+  read+ overwrite (point to the beginning) and does not truncate
 # w+  write+ truncate (at the beginning)
 # a+  append+ (point to the end) and does not truncate
+
+# with syntax:
+
+# with open("demo.txt", "r") as f:
+#     data = f.read()
+#     print(data)
+
+# with open("demo.txt", "w") as f:    
+#     data = f.write("NEW DATA")
+#     print(data)
+
+#deleting a file:
+# using the os module
+# Module (like a code library) is a file written by another programmer that generally has a funtions we can use.
+
+# import os
+# os.remove("demo.txt")
+
+#create a new file "practice.txt" using python. Add the following data in it:
+
+# Hi everyone
+# we are learning File I/O 
+# using python.
+# i like programming in python.
+
+# with open("practice.txt", "w")as f:
+#     f.write("Hi everyone\nwe are learning file I/O\nusing python.\ni like programming in python.")
+
+#write a functions that replaced occurrences of "python" with "java" in above file
+
+# with open("practice.txt", "r") as f:
+#     data = f.read()
+
+# new_data = data.replace("python", "java")    
+# print(new_data)    
+
+# with open("practice.txt", "w") as f:            #overwrite
+#     f.write(new_data)
+
+#Serach if the word "learning" exists in the file or not.
+
+# def check_for_word():
+#     word = "learning"
+#     with open("practice.txt", "r") as f:
+#         data = f.read()
+#     if(data.find(word) != -1):  #if(word in data)
+#         print("found")
+#     else:
+#          print("not found")   
+
+# check_for_word()
+
+#write a function to find in which line of the file does the word "learning" occur first.
+# print -1 if word not found.
+
+# def check_for_line():
+#     word = "learning"
+#     data = True
+#     line_no = 1
+#     with open("practice.txt", "r") as f:
+#         while data:
+#             data = f.readline()
+#             if(word in data):
+#                 print(line_no)
+#                 return
+#             line_no += 1
+#     return -1
+
+# print(check_for_line())
+
+# From a file containing numbers separated by comma, print the count of even numbers.
+
+#compelete scratch type:basic
+
+# with open("practice.txt", "r") as f:
+#     data = f.read()
+#     print(data)
+
+#     num = ""
+#     for i in range(len(data)):
+#         if(data[i] == ","):
+#             print(int(num))
+#             num = ""
+#         else:
+#             num += data[i]    
+
+# second way for this
+count = 0
+with open("practice.txt", "r") as f:
+    data = f.read()
+
+    nums = data.split(",")
+    for val in nums:
+        if(int(val) % 2 == 0):
+            count += 1
+
+print(count)            

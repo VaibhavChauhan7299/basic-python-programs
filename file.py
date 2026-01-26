@@ -35,12 +35,38 @@
 # line = f.readline() #reads one line from the file
 
 
-f = open("loops.py", "r")
+# f = open("loops.py", "r")
 
-line1 = f.readline()
-print(line1)
+# line1 = f.readline()
+# print(line1)
 
-line2 = f.readline()
-print(line2)
+# line2 = f.readline()
+# print(line2)
 
-f.close()
+# f.close()
+
+#writing to a file:
+
+# f = open("sample.txt", "w") #opens the file in write mode
+
+# f = open("demo.txt", "w") #opens the file in write mode
+# f.write("I Love Python Programming")
+
+# f = open("demo.txt", "a")
+# f.write("\nbut I am learning java too.")
+# f.close()
+
+# f = open("demo.txt", "r+") #opens the file in read and write mode
+# f.read("\nThis is new line added.")
+
+# f = open("demo.txt", "w+")
+# f.write("This is new line added.")
+# print(f.read())
+# f.write("This is another new line.")
+# f.close()
+
+#simply clarify and syntax of modes:
+
+# r+  read+ overwrite (point to the beginning) and does not truncate
+# w+  write+ truncate (at the beginning)
+# a+  append+ (point to the end) and does not truncate

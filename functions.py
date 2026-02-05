@@ -99,13 +99,13 @@
 #ex2:
 
 # cities = ["Delhi", "Mumbai", "Bangalore", "Chennai", "Kolkata"]
-# heros = ["Ironman", "Spiderman", "Hulk", "Thor", "Captain America"]
+# heroes = ["Ironman", "Spiderman", "Hulk", "Thor", "Captain America"]
 
 # def print_list(lst):
 #     print(len(lst))
 
 # print_list(cities)
-# print_list(heros)
+# print_list(heroes)
 
 
 #write a function to print the elements of a list in a single line (list is the parameter).
@@ -178,7 +178,7 @@
 #         return
 #     print(n)
 #     show(n-1)
-#     print(END)
+#     print("END")
 # show(5)
 
 

@@ -48,17 +48,50 @@
 #1 = Class.attr
 #2 = obj.attr
 
-class Students :
-    college_name = "RK university"
-    def __init__(self, name, marks):
-        self.name = name
-        self.marks = marks
-        print("adding new student in Database..")
-       
-s1 = Students("vaibhav", 97)
-print( s1.name, s1.marks)
-print(s1.college_name)
+# class Students :
+#     college_name = "RK university"
+#     def __init__(self, name, marks):
+#         self.name = name #obj attr > classs attr
+#         self.marks = marks
+#         print("adding new student in Database..")
 
-s2 = Students("yashvi", 99)
-print(s2.name, s2.marks)
-print(s2.college_name)
+#     def welcome(self):
+#          print("welcome student", self.name)    
+
+#     def get_marks(self):
+#         return self.marks     
+       
+# s1 = Students("vaibhav", 97)
+# s1.welcome()
+# print( s1.name, s1.marks)
+# print(s1.college_name)
+# print(s1.get_marks())
+
+
+# s2 = Students("yashvi", 99)
+# print(s2.name, s2.marks)
+# print(s2.college_name)
+
+#methods: Methods are functions that belong to objects
+
+# def welcome(self):
+#     print("welcome students")
+
+# create student class that takes name & marks of 3 subjects as arguments in constructor. Then create a method to print the average.
+
+class Students:
+
+    def __init__(self, name, marks):
+        self.name = name 
+        self.marks = marks
+
+    def get_avg(self):
+        sum = 0
+        for val in self.marks:
+            sum += val
+        print("Hi", self.name, "your avg score is:", sum/3)
+
+s1 = Students("vaibhav", [99,97,98])
+s1.get_avg()        
+
+#Static Methods: Methods that don't use the self parameter(work at class level)

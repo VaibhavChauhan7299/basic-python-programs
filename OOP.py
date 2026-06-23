@@ -79,19 +79,45 @@
 
 # create student class that takes name & marks of 3 subjects as arguments in constructor. Then create a method to print the average.
 
-class Students:
+# class Students:
 
-    def __init__(self, name, marks):
-        self.name = name 
-        self.marks = marks
+#     def __init__(self, name, marks):
+#         self.name = name 
+#         self.marks = marks
 
-    def get_avg(self):
-        sum = 0
-        for val in self.marks:
-            sum += val
-        print("Hi", self.name, "your avg score is:", sum/3)
+#     @staticmethod
+#     def hello():
+#         print("hello")
 
-s1 = Students("vaibhav", [99,97,98])
-s1.get_avg()        
+#     def get_avg(self):
+#         sum = 0
+#         for val in self.marks:
+#             sum += val
+#         print("Hi", self.name, "your avg score is:", sum/3)
 
+# s1 = Students("vaibhav", [99,97,98])
+# s1.get_avg()        
+# s1.hello()
 #Static Methods: Methods that don't use the self parameter(work at class level)
+
+#decorators allows us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it.
+
+#OOP Structure is in 4 pillars:
+
+#1 Abstaction: Hiding the implementation details of a class and only showing the essential features to the user.
+
+#ex:
+
+class Car:
+    def __init__(self):
+        self.acc = False
+        self.brk = False
+        self.clutch = False
+
+    def start(self):
+        self.clutch = True    
+        self.acc = True
+        print("car started..")
+
+car1 = Car()
+car1.start()

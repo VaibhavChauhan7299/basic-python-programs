@@ -127,30 +127,63 @@
 
 #question: Create Account class with 2 attributes - balance & account no. .Create a method to deposit and withdraw money from the account.
 
-class Account:
-    def __init__ (self, bal, acc):
-        self.balance = bal
-        self.account_no = acc
+# class Account:
+#     def __init__ (self, bal, acc):
+#         self.balance = bal
+#         self.account_no = acc
 
-    def debit(self, amount):
-        self.balance -= amount
-        print("Rs. ", amount, "was debited")
-        print("total balance =", self.get_balance())
-
-
-
-    def credit(self, amount):
-        self.balance += amount
-        print("Rs. ", amount, "was credited")
-        print("total balance =", self.get_balance())
+#     def debit(self, amount):
+#         self.balance -= amount
+#         print("Rs. ", amount, "was debited")
+#         print("total balance =", self.get_balance())
 
 
-    def get_balance(self):
-        return self.balance        
+
+#     def credit(self, amount):
+#         self.balance += amount
+#         print("Rs. ", amount, "was credited")
+#         print("total balance =", self.get_balance())
+
+
+#     def get_balance(self):
+#         return self.balance        
     
-acc1 = Account (10000, 12345) 
-# print(acc1.balance)
-# print(acc1.account_no)   
-acc1.debit(5000)
-acc1.credit(2000)
-acc1.credit(55000)
+# acc1 = Account (10000, 12345) 
+# # print(acc1.balance)
+# # print(acc1.account_no)   
+# acc1.debit(5000)
+# acc1.credit(2000)
+# acc1.credit(55000)
+
+
+# del keyword: used to delete object properties or object itself.
+#del s1.name
+#del s1
+
+#ex
+
+# class Students:
+#     def __init__(self, name):
+#         self.name = name
+
+# s1 = Students("vaibhav")
+# print(s1.name)
+# del s1.name
+# print(s1.name)        
+
+#private attributes & methods:
+#Conceptual Implementations in python : private attributes & methods are meant to be used only within the class and are not accessible from outside the class.
+# ex
+
+class Account:
+    def __init__(self, acc_no, acc_pass):
+        self.acc_no = acc_no
+        self.__acc_pass = acc_pass
+
+    def reset_pass(self):
+        print(self.__acc_pass)    
+
+acc1 = Account("12345", "abc@123")
+
+print(acc1.acc_no)
+print(acc1.reset_pass())

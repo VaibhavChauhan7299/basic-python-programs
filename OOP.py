@@ -186,4 +186,57 @@
 # acc1 = Account("12345", "abc@123")
 
 # print(acc1.acc_no)
-# print(acc1.reset_pass())
+# print(acc1.reset_pass()
+
+#Inheritance:
+# When one class(child/derived) derives the properties & methods of another class9parent/base).
+#TYPES OF INHERITANCE:
+#1 Single Inheritance
+#2 Multiple Inheritance
+#3 Multilevel Inheritance
+#4 Hierarchical Inheritance
+#5 Hybrid Inheritance
+
+#ex
+
+# class Car:
+#     color = "black"
+#     @staticmethod
+#     def start():
+#         print("car started..")
+
+#     @staticmethod
+#     def stop():
+#         print("car stopped..")    
+
+# class ToyotaCar(Car):
+#     def __init__(self, name):
+#         self.name = name
+
+
+# car1 = ToyotaCar("fortuner")
+# car2 = ToyotaCar("innova")
+
+# print(car1.start())
+# print(car2.color)
+
+#Multiple Inheritance: When a class is derived from more than one base class, it is called multiple inheritance.
+
+#ex:
+
+# class A:
+#     varA = "Welcome to class A"
+
+# class B:
+#     varB = "Welcome to class B"
+
+# class C(A, B):
+#     varC = "Welcome to class C"
+
+# c1 = C()
+
+# print(c1.varA)
+# print(c1.varB)
+# print(c1.varC)
+
+#Super method: super() method is used to access methods of the parent class.

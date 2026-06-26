@@ -356,8 +356,46 @@
 # Define an Area() method of the class which calculate the area of the circle.
 # Define a pwrimeter() method of the class which allows you to calculate the primeter of the circle.
 
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return (22/7) * self.radius ** 2
+
+    def perimeter(self):
+        return 2 * (22/7) * self.radius
+
+c1 = Circle(21)
+print(c1.area())
+print(c1.perimeter())        
 
 #Qs 2
 
-# Define a Employee class with attributes role, department & salary. This class showDetails()method.
-# Create an Engineer class that inherits properties from Employee &     attributes: name & age.
+# Define a Employee class with attributes role, department & salary. This class also has showDetails()method.
+# Create an Engineer class that inherits properties from Employee & has additional attributes: name & age.
+
+# class Employee:
+#     def __init__(self, role, dept, salary):
+#         self.role = role
+#         self.dept = dept
+#         self.salary = salary
+
+#     def showDetails(self):
+#         print("role:", self.role)
+#         print("department:",self.dept)
+#         print("salary:", self.salary)
+
+# class Engineer(Employee):
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#         super().__init__("Engineer", "IT", "75,000")
+
+# # e1 = Employee("Manager", "sales", "50000")
+# # e1.showDetails()
+
+# engg1 = Engineer("Elon Musk", 40)
+# engg1.showDetails()
+
+#

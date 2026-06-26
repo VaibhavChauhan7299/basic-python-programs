@@ -312,3 +312,52 @@
 # # print(stu1.phy)
 # # stu1.calcPercentage()
 # print(stu1.percentage)        
+
+#polymorphism: operator overloading
+# when the same operator is allowed to have different meaning according to the context.
+
+# + :
+
+# print(1 + 2) #addition
+# print(type(1))
+# print("Vaibhav" + "Chauhan")#concatenate
+# print(type("Vaibhav"))
+# print([1, 2, 3] + [4, 5, 6])#merge lists
+# print(type([1, 2, 3]))
+
+#ex:
+
+# class Complex:
+#     def __init__(self, real, img):
+#         self.real = real
+#         self.img = img
+
+#     def showNumber(self):
+#         print(self.real, "i +", self.img, "j")
+
+#     def add(self , num2):
+#         newreal = self.real + num2.real
+#         newImg =  self.img + num2.img
+#         return Complex(newreal, newImg)
+
+# num1 = Complex(1, 3)
+# num1.showNumber()
+
+# num2 = Complex(4, 6)
+# num2.showNumber()
+
+# num3 = num1.add(num2)
+# num3.showNumber()
+
+
+#Qs 1 
+
+# Define a Circle class to create a circle with radius r using the constructor. 
+# Define an Area() method of the class which calculate the area of the circle.
+# Define a pwrimeter() method of the class which allows you to calculate the primeter of the circle.
+
+
+#Qs 2
+
+# Define a Employee class with attributes role, department & salary. This class showDetails()method.
+# Create an Engineer class that inherits properties from Employee &     attributes: name & age.

@@ -265,3 +265,20 @@
 #class method: A class method is bound to the class & receives the class as an implicit first argument.
 #note: static method can't access or modify class state & generally for utility.
 
+#method=1
+
+class Person:
+    name = "anonymous"
+
+    # def changeName(self, name):
+    #     Person.name = name #(this will change the class attribute)(self.__class__.name = vaibahv) can also be used to change the class attribute
+        #self.name = name (#this will change the instance attribute)
+        
+    @classmethod
+    def changeName(cls, name):
+        cls.name = name
+
+p1 = Person()
+p1.changeName("vaibhav")
+print(p1.name)
+print(Person.name)

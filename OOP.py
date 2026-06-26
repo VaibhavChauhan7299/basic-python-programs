@@ -267,18 +267,48 @@
 
 #method=1
 
-class Person:
-    name = "anonymous"
+# class Person:
+#     name = "anonymous"
 
     # def changeName(self, name):
     #     Person.name = name #(this will change the class attribute)(self.__class__.name = vaibahv) can also be used to change the class attribute
         #self.name = name (#this will change the instance attribute)
-        
-    @classmethod
-    def changeName(cls, name):
-        cls.name = name
 
-p1 = Person()
-p1.changeName("vaibhav")
-print(p1.name)
-print(Person.name)
+#method=2
+#     @classmethod
+#     def changeName(cls, name):
+#         cls.name = name
+
+# p1 = Person()
+# p1.changeName("vaibhav")
+# print(p1.name)
+# print(Person.name)
+
+
+#static method : this method in don't have access to the instance or class attributes. It is used to create utility functions.
+#class method (cls):this method have access to the class attributes and can modify them. It is used to create factory methods.
+#instance method (self): this method have access to the instance attributes and can modify them. It is used to create methods that operate on the instance data. 
+
+#property decorator: we use @property decorater on any method in the class to use the method as a property.
+
+# class Student:
+#     def __init__(self, phy, chem, math):
+#         self.phy = phy
+#         self.chem = chem
+#         self.math = math
+#     #     self.percentage = str((self.phy + self.chem + self.math) / 3) + "%" #method=1
+
+#     # def calcPercentage(self):
+#     #     self.percentage = str((self.phy + self.chem + self.math) / 3) + "%"
+
+#     @property  #method=2 this will allow us to access the method as a property without calling it as a method.
+#     def percentage(self):
+#         return str((self.phy + self.chem + self.math) / 3) + "%"
+    
+# stu1 = Student(90, 97, 99)
+# print(stu1.percentage)        
+
+# stu1.phy = 95
+# # print(stu1.phy)
+# # stu1.calcPercentage()
+# print(stu1.percentage)        

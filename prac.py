@@ -51,3 +51,10 @@
 # c1 = Circle(21)
 # print(c1.area())
 # print(c1.perimeter())
+
+a = 50
+b = 20
+
+print("Before swapping: a =", a, "b =", b)
+a, b = b, a
+print("After swapping: a =", a, "b =", b)

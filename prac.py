@@ -75,3 +75,14 @@
 #     print(f"{user_input} is a prime number.")
 # else:
 #     print(f"{user_input} is not a prime number.")
+
+#create a program to addition of multiple numbers using *args:
+#*args allows you to pass a variable number of arguments to a function. Here's a simple program that demonstrates how to use *args to add multiple numbers:
+
+# def add_numbers(*args):
+#     return sum(args)
+
+# # Example usage:
+
+# result = add_numbers(*range(1, 101))
+# print("The sum is:", result)

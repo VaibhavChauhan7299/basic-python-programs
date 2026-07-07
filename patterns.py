@@ -1,5 +1,5 @@
 #programs of patterns in python:
-#method 1:
+#method 1: Star pattern:
 # print("**************")
 # print("*************")
 # print("************")
@@ -42,3 +42,22 @@
 # for i in range(10, 0, -1):
 #     print('*' * i)
 
+#method 4: 
+# n = 5
+# for i in range(n):
+#     print('*' * (i + 1))
+
+#method 5: reverse star pattern:
+
+# n = 10
+# for i in range(n):
+#     print('*' * (n - i))
+
+#number pattern:
+
+# n = 10
+# for i in range(n):
+#     for j in range(i + 1):
+#         print(j + 1, end='')
+#     print()
+    

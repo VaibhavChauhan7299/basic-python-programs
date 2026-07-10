@@ -10,7 +10,7 @@
 
 #creating iterator using iterator() function:
 
-# iterator = iter(my_list)
+#  iterator = iter(my_list)
 # print(type(iterator))
 # print(next(iterator))
 # print(next(iterator))

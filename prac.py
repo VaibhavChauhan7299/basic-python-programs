@@ -86,3 +86,13 @@
 
 # result = add_numbers(*range(1, 101))
 # print("The sum is:", result)
+
+# write a program to merge 2 list without using the + operator:
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+
+for i in list2:
+    list1.append(i)
+
+print("Merged list:", list1)    

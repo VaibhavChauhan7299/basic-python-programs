@@ -19,3 +19,13 @@
 # print(next(iterator))
 # print(next(iterator))
 # print(next(iterator))  # This will raise StopIteration error since there are no more elements to iterate over.
+
+
+# numbers = [10, 20, 30, 40, 50]
+# iter_object = iter(numbers)
+
+# while True:
+#     try:
+#         print(next(iter_object))
+#     except StopIteration:
+#         break

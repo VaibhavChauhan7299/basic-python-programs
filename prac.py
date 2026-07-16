@@ -89,10 +89,24 @@
 
 # write a program to merge 2 list without using the + operator:
 
-list1 = [1, 2, 3, 4, 5]
-list2 = [6, 7, 8, 9, 10]
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [6, 7, 8, 9, 10]
 
-for i in list2:
-    list1.append(i)
+# for i in list2:
+#     list1.append(i)
 
-print("Merged list:", list1)    
+# print("Merged list:", list1)    
+
+
+#Zip
+#Hostel data
+
+# name = ['Ankur', 'Vaibhav', 'Rohit', 'Saurabh']
+
+# bedroom = [101, 102, 103, 104]
+
+# fee_status = ['Paid', 'Unpaid', 'Paid', 'Unpaid']
+
+# all_data = list(zip(name , bedroom, fee_status))
+
+# print(all_data)

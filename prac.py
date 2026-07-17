@@ -110,3 +110,17 @@
 # all_data = list(zip(name , bedroom, fee_status))
 
 # print(all_data)
+
+
+#write a program to find the factorial of a number using recursion:
+
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+
+# print(factorial(5))  # Output: 120
+# print(factorial(0))  # Output: 1
+# print(factorial(1))  # Output: 1
+

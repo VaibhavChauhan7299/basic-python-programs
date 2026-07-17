@@ -124,3 +124,13 @@
 # print(factorial(0))  # Output: 1
 # print(factorial(1))  # Output: 1
 
+#forloop method:
+
+# n = int(input("Enter a number: "))
+
+# factorial = 1
+
+# for i in range(1, n + 1):
+#     factorial *= i
+
+# print("Factorial =", factorial)

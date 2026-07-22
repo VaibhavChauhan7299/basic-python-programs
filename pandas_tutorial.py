@@ -1,5 +1,7 @@
 import pandas as pd
 
+#series: 
+
 # x = [1, 2, 3, 4, 5] #list 
 
 # s = pd.Series(x, index = ['a', 'b', 'c', 'd', 'e'], dtype = "float", name = "My First Series")
@@ -23,12 +25,25 @@ import pandas as pd
 # print(s)
 # print(type(s))
 
-s1 = pd.Series(12, index = [1,2,3,4,5,6,7,8,9,10])
-s2 = pd.Series(12, index = [1,2,3,4,5])
+# s1 = pd.Series(12, index = [1,2,3,4,5,6,7,8,9,10])
+# s2 = pd.Series(12, index = [1,2,3,4,5])
 
-print(s1+s2) #output: 1    24.0
-print(s1-s2) #output: 1     0.0
-print(s1*s2) #output: 1    144.0
-print(s1/s2) #output: 1    1.0
-print(s1)
-print(s2)
+# print(s1+s2) #output: 1    24.0
+# print(s1-s2) #output: 1     0.0
+# print(s1*s2) #output: 1    144.0
+# print(s1/s2) #output: 1    1.0
+# print(s1)
+# print(s2)
+
+#DataFrame:
+# l = [1,2,3,4,5,6,7,8,9,10] #list
+
+# var = pd.DataFrame(l)
+# print(type(var))
+
+#dictionary
+# d = {"a":[1,2,3,4,5], "b":[6,7,8,9,10], "c":[11,12,13,14,15]}
+
+# var1 = pd.DataFrame(d, columns = ["a", "b"], index = ["row1", "row2", "row3", "row4", "row5"])
+# var1 = pd.DataFrame(d)
+# print(var1["a"][3])

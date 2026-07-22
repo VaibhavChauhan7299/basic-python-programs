@@ -66,11 +66,19 @@ import pandas as pd
 
 #Arithmetic operations:
 
-var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10],})
+# var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10],})
 
-var["C"] = var["A"] + var["B"]
-var["D"] = var["A"] - var["B"]
-var["E"] = var["A"] * var["B"]
-var["F"] = var["A"] / var["B"]
+# var["C"] = var["A"] + var["B"]
+# var["D"] = var["A"] - var["B"]
+# var["E"] = var["A"] * var["B"]
+# var["F"] = var["A"] / var["B"]
 
-print(var)
+# print(var)
+
+#logical operations:
+
+var1 = pd.DataFrame({"A":[10,20,30,40,50], "B":[15,16,17,18,19,]})
+# print(var1)
+
+var1["Python"] = var1["A"] <= 20
+print(var1)

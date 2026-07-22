@@ -23,12 +23,12 @@ import pandas as pd
 # print(s)
 # print(type(s))
 
-# s1 = pd.Series(12, index = [1,2,3,4,5,6,7,8,9,10])
-# s2 = pd.Series(12, index = [1,2,3,4,5])
+s1 = pd.Series(12, index = [1,2,3,4,5,6,7,8,9,10])
+s2 = pd.Series(12, index = [1,2,3,4,5])
 
-# print(s1+s2) #output: 1    24.0
-# print(s1-s2) #output: 1     0.0
-# print(s1*s2) #output: 1    144.0
-# print(s1/s2) #output: 1    1.0
-# print(s1)
-# print(s2)
+print(s1+s2) #output: 1    24.0
+print(s1-s2) #output: 1     0.0
+print(s1*s2) #output: 1    144.0
+print(s1/s2) #output: 1    1.0
+print(s1)
+print(s2)

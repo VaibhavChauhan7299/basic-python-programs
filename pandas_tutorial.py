@@ -58,8 +58,19 @@ import pandas as pd
 
 #2 series to dataframe
 
-sr ={"r":pd.Series([1,2,3,4,5]), "s":pd.Series([6,7,8,9,10])}
+# sr ={"r":pd.Series([1,2,3,4,5]), "s":pd.Series([6,7,8,9,10])}
 
-var3 = pd.DataFrame(sr)
-print(var3)
-print(type(var3))
+# var3 = pd.DataFrame(sr)
+# print(var3)
+# print(type(var3))
+
+#Arithmetic operations:
+
+var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10],})
+
+var["C"] = var["A"] + var["B"]
+var["D"] = var["A"] - var["B"]
+var["E"] = var["A"] * var["B"]
+var["F"] = var["A"] / var["B"]
+
+print(var)

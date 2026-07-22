@@ -55,3 +55,11 @@ import pandas as pd
 # var2 = pd.DataFrame(list_1)
 # print(var2)
 # print(type(var2))
+
+#2 series to dataframe
+
+sr ={"r":pd.Series([1,2,3,4,5]), "s":pd.Series([6,7,8,9,10])}
+
+var3 = pd.DataFrame(sr)
+print(var3)
+print(type(var3))

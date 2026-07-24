@@ -80,6 +80,6 @@ import pandas as pd
 # var1 = pd.DataFrame({"A":[10,20,30,40,50], "B":[15,16,17,18,19,]})
 # print(var1)
 
-var1["Python"] = var1["A"] <= 20
-var1["Python_1"] = var1["B"] >= 16
-print(var1)
+# var1["Python"] = var1["A"] <= 20
+# var1["Python_1"] = var1["B"] >= 16
+# print(var1)

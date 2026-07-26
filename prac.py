@@ -137,16 +137,16 @@
 
 #question: SWAP the key value pair for max and min values Eg if the dict is like this{'a': 1, 'b': 2, 'c': 3, 'd': 4} then the output should be like this {'a': 4, 'b': 2, 'c': 3, 'd': 1}
 
-dic = {
-    "a": 1,
-    "b": 2,
-    "c": 3,
-    "d": 4
-}
+# dic = {
+#     "a": 1,
+#     "b": 2,
+#     "c": 3,
+#     "d": 4
+# }
 
-max_key = max(dic, key = dic.get) # type: ignore
-min_key = min(dic, key = dic.get) # type: ignore
+# max_key = max(dic, key = dic.get) # type: ignore
+# min_key = min(dic, key = dic.get) # type: ignore
 
-dic[max_key], dic[min_key] = dic[min_key], dic[max_key]
+# dic[max_key], dic[min_key] = dic[min_key], dic[max_key]
 
-print(dic)
+# print(dic)

@@ -135,10 +135,18 @@
 
 # print("Factorial =", factorial)
 
-#write program for square root of all list number.
+#question: SWAP the key value pair for max and min values Eg if the dict is like this{'a': 1, 'b': 2, 'c': 3, 'd': 4} then the output should be like this {'a': 4, 'b': 2, 'c': 3, 'd': 1}
 
-# nums = [1,2,3,4,5,6.7,8,9,10]
+dic = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+    "d": 4
+}
 
-# for i in nums
+max_key = max(dic, key = dic.get) # type: ignore
+min_key = min(dic, key = dic.get) # type: ignore
 
+dic[max_key], dic[min_key] = dic[min_key], dic[max_key]
 
+print(dic)

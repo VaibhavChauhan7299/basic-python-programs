@@ -86,8 +86,10 @@ import pandas as pd
 
 #Insert:
 
-var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10]})
+# var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10]})
 
-var.insert(1, "Python", var["A"] )
+# var.insert(1, "Python", var["A"] )
 
-print(var)
+# print(var)
+
+#tables of multiplication 

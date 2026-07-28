@@ -4,7 +4,7 @@ import pandas as pd
 
 # x = [1, 2, 3, 4, 5] #list 
 
-# s = pd.Series(x, index = ['a', 'b', 'c', 'd', 'e'], dtype = "float", name = "My First Series")
+# s = pd.Series(x, index = ['a', 'b', 'c', 'd', 'e'], dtype = "int", name = "My First Series")
 
 # print(s)
 

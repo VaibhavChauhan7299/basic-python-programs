@@ -114,10 +114,11 @@ import pandas as pd
 
 # how to create CSV file:
 
-# dis = {"R":[1,2,3,4,5], "S":[6,7,8,9,10], "C":[11,12,13,14,15], "Y":[16,17,18,19,20], "V":[21,22,23,24,25]}
+dis = {"R":[1,2,3,4,5], "S":[6,7,8,9,10], "C":[11,12,13,14,15], "Y":[16,17,18,19,20], "V":[21,22,23,24,25]}
 
-# d = pd.DataFrame(dis)
+d = pd.DataFrame(dis)
 
-# print(d)
+print(d)
 
-# d.to_csv("5_Members.csv")
+d.to_csv("5_MembersF.csv", index=False)
+

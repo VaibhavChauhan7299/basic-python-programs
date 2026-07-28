@@ -89,6 +89,16 @@ import pandas as pd
 # var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10]})
 
 # var.insert(1, "Python", var["A"] )
-# var.insert(1, "Python_1", [11,12,13,14,15])
+
+# var.insert(1, "Python_1", [11,12,13,14,15])#second method
+
+# var["Python_12"] = var["A"][:3]#copy need data and insert a new column
 
 # print(var)
+
+var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10], "C":[11,12,13,14,15]})
+
+var1 = var.pop("B")
+
+print(var1)
+print(var)

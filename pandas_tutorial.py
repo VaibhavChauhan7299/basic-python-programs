@@ -96,13 +96,28 @@ import pandas as pd
 
 # print(var)
 
-var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10], "C":[11,12,13,14,15]})
+#Delete:
+
+# var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10], "C":[11,12,13,14,15]})
 
 # var1 = var.pop("B")
 
 # print(var1)
 # print(var)
 
-del var["A"] #second method
+# del var["A"] #second method
 
-print(var)
+# print(var)
+
+
+# write CSV 
+
+# how to create CSV file:
+
+# dis = {"R":[1,2,3,4,5], "S":[6,7,8,9,10], "C":[11,12,13,14,15], "Y":[16,17,18,19,20], "V":[21,22,23,24,25]}
+
+# d = pd.DataFrame(dis)
+
+# print(d)
+
+# d.to_csv("5_Members.csv")

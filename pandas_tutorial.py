@@ -98,7 +98,11 @@ import pandas as pd
 
 var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10], "C":[11,12,13,14,15]})
 
-var1 = var.pop("B")
+# var1 = var.pop("B")
 
-print(var1)
+# print(var1)
+# print(var)
+
+del var["A"] #second method
+
 print(var)

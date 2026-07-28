@@ -89,7 +89,6 @@ import pandas as pd
 # var = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10]})
 
 # var.insert(1, "Python", var["A"] )
+# var.insert(1, "Python_1", [11,12,13,14,15])
 
 # print(var)
-
-#tables of multiplication 

@@ -122,3 +122,6 @@ import pandas as pd
 
 # d.to_csv("5_MembersF.csv", index=False)
 
+#Read CSV
+
+csv_1 = pd.read_csv

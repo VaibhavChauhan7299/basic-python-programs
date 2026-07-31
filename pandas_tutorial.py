@@ -124,4 +124,5 @@ import pandas as pd
 
 #Read CSV
 
-csv_1 = pd.read_csv
+csv_1 = pd.read_csv("//Users//vaibhavchauhan//Desktop//basic-python-programs//5_MembersF.csv")
+print(csv_1)

@@ -182,3 +182,16 @@
 #     merged_dict[key] = dict2[key]
 
 # print(merged_dict)
+
+#write a program to find the common elements in two lists:
+
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [4, 5, 6, 7, 8]
+
+# common_elements = []
+
+# for i in list1:
+#     if i in list2:
+#         common_elements.append(i)
+
+# print("Common elements:", common_elements)

@@ -153,10 +153,12 @@
 
 #Write a program to find the second largest number in a list:
 
-numbers = [10, 5, 8, 20, 15]
+# numbers = [10, 5, 8, 20, 15]
 
-numbers.sort(reverse=True)
+# numbers.sort(reverse=True)
 
-second_largest = numbers[1]
+# second_largest = numbers[1]
 
-print("The second largest number is:", second_largest)
+# print("The second largest number is:", second_largest)
+
+#

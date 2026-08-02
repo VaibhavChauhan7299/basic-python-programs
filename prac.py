@@ -157,4 +157,6 @@ numbers = [10, 5, 8, 20, 15]
 
 numbers.sort(reverse=True)
 
-second_largest = numbers[1]z
+second_largest = numbers[1]
+
+print("The second largest number is:", second_largest)

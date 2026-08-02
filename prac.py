@@ -161,4 +161,24 @@
 
 # print("The second largest number is:", second_largest)
 
-#
+#write a program to merge two dictionaries without using inbuilt function:
+
+# dict1 = {
+#     "name": "Vaibhav",
+#     "age": 22
+# }
+
+# dict2 = {
+#     "city": "Mumbai",
+#     "country": "India"
+# }
+
+# merged_dict = {}
+
+# for key in dict1:
+#     merged_dict[key] = dict1[key]
+
+# for key in dict2:
+#     merged_dict[key] = dict2[key]
+
+# print(merged_dict)

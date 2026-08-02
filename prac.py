@@ -195,3 +195,11 @@
 #         common_elements.append(i)
 
 # print("Common elements:", common_elements)
+
+#how index giving for list:
+
+# list = [10, 20, 30, 40, 50]
+
+# for index, value in enumerate(list):
+
+#  print(index, value)

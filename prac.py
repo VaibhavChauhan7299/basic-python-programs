@@ -207,9 +207,16 @@
 
 #Write a program to find the sum of all even numbers in a list:
 
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# even_sum = sum(num for num in numbers if num % 2 == 0)
+
+# print("The sum of all even numbers is:", even_sum)
+
+#write a program to find the largest number in a list:
+
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-even_sum = sum(num for num in numbers if num % 2 == 0)
+largest_number = max(numbers)
 
-print("The sum of all even numbers is:", even_sum)
-
+print("The largest number in the list is:", largest_number)

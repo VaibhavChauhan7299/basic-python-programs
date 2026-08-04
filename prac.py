@@ -204,3 +204,12 @@
 # for index, value in enumerate(list):
 
 #  print(index, value)
+
+#Write a program to find the sum of all even numbers in a list:
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+even_sum = sum(num for num in numbers if num % 2 == 0)
+
+print("The sum of all even numbers is:", even_sum)
+

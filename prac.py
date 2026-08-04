@@ -1,21 +1,22 @@
-#Reverse a String:
+##Reverse a String:
 
 # s = "Python"
 # print(s[::-1])
 
-# #List Comprehension:
+## #List Comprehension:
 
 # nums = [1, 2, 3, 4, 5]
 # square = [x**2 for x in nums]
 # print(square)
 
-#Check  for a palinrome:
+##Check  for a palinrome:
 
 # def is_palindrome(words):
 #     return words == words[::-1]
 # print(is_palindrome("11122"))
 
-#check with simple palindrome:
+##check with simple palindrome:
+
 # def is_palindrome(s):
 #     s = ''.join(c.lower()for c in s if c.isalnum()) #Convert to lowercase and remove non-aphanumeric characters(optional)
 #     return s == s[::-1] # s[::-1] reverses the string 
@@ -25,7 +26,7 @@
 # print(is_palindrome("A man, a plan, a canal: Panama")) 
 # print(is_palindrome("12321"))
 
-#Without using slicing (using two pointers):
+##Without using slicing (using two pointers):
 
 # def is_palindrome(s):
 #     s = ''.join(c.lower()for c in s if c.isalnum())#Convert to lowercase and remove non-aphanumeric characters(optional)
@@ -59,7 +60,7 @@
 # a, b = b, a
 # print("After swapping: a =", a, "b =", b)
 
-#I have create a program to check if a number is prime or not:
+## I have create a program to check if a number is prime or not:
 
 # def is_prime(n):
 #     if n <= 1:
@@ -76,8 +77,8 @@
 # else:
 #     print(f"{user_input} is not a prime number.")
 
-#create a program to addition of multiple numbers using *args:
-#*args allows you to pass a variable number of arguments to a function. Here's a simple program that demonstrates how to use *args to add multiple numbers:
+## create a program to addition of multiple numbers using *args:
+# *args allows you to pass a variable number of arguments to a function. Here's a simple program that demonstrates how to use *args to add multiple numbers:
 
 # def add_numbers(*args):
 #     return sum(args)
@@ -87,7 +88,7 @@
 # result = add_numbers(*range(1, 101))
 # print("The sum is:", result)
 
-# write a program to merge 2 list without using the + operator:
+## write a program to merge 2 list without using the + operator:
 
 # list1 = [1, 2, 3, 4, 5]
 # list2 = [6, 7, 8, 9, 10]
@@ -98,9 +99,9 @@
 # print("Merged list:", list1)    
 
 
-#Zip
+## Zip
 
-#Hostel data
+## Hostel data
 
 # name = ['Ankur', 'Vaibhav', 'Rohit', 'Saurabh']
 
@@ -113,7 +114,7 @@
 # print(all_data)
 
 
-#write a program to find the factorial of a number using recursion:
+## write a program to find the factorial of a number using recursion:
 
 # def factorial(n):
 #     if n == 0 or n == 1:
@@ -125,7 +126,7 @@
 # print(factorial(0))  # Output: 1
 # print(factorial(1))  # Output: 1
 
-#forloop method:
+## forloop method:
 
 # n = int(input("Enter a number: "))
 
@@ -136,7 +137,7 @@
 
 # print("Factorial =", factorial)
 
-#question: SWAP the key value pair for max and min values Eg if the dict is like this{'a': 1, 'b': 2, 'c': 3, 'd': 4} then the output should be like this {'a': 4, 'b': 2, 'c': 3, 'd': 1}
+## question: SWAP the key value pair for max and min values Eg if the dict is like this{'a': 1, 'b': 2, 'c': 3, 'd': 4} then the output should be like this {'a': 4, 'b': 2, 'c': 3, 'd': 1}
 
 # dic = {
 #     "a": 1,
@@ -152,7 +153,7 @@
 
 # print(dic)
 
-#Write a program to find the second largest number in a list:
+## Write a program to find the second largest number in a list:
 
 # numbers = [10, 5, 8, 20, 15]
 
@@ -162,7 +163,7 @@
 
 # print("The second largest number is:", second_largest)
 
-#write a program to merge two dictionaries without using inbuilt function:
+##write a program to merge two dictionaries without using inbuilt function:
 
 # dict1 = {
 #     "name": "Vaibhav",
@@ -184,7 +185,7 @@
 
 # print(merged_dict)
 
-#write a program to find the common elements in two lists:
+## write a program to find the common elements in two lists:
 
 # list1 = [1, 2, 3, 4, 5]
 # list2 = [4, 5, 6, 7, 8]
@@ -197,7 +198,7 @@
 
 # print("Common elements:", common_elements)
 
-#how index giving for list:
+## how index giving for list:
 
 # list = [10, 20, 30, 40, 50]
 
@@ -205,7 +206,7 @@
 
 #  print(index, value)
 
-#Write a program to find the sum of all even numbers in a list:
+## Write a program to find the sum of all even numbers in a list:
 
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -213,10 +214,10 @@
 
 # print("The sum of all even numbers is:", even_sum)
 
-#write a program to find the largest number in a list:
+## write a program to find the largest number in a list:
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-largest_number = max(numbers)
+# largest_number = max(numbers)
 
-print("The largest number in the list is:", largest_number)
+# print("The largest number in the list is:", largest_number)

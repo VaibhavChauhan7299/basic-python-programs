@@ -224,45 +224,56 @@
 
 #interview question: Write a program to find the missing number in a list of consecutive numbers:
 
-def find_missing_number(numbers):
-    n = len(numbers) + 1  # Total number of elements including the missing one
+# def find_missing_number(numbers):
+#     n = len(numbers) + 1  # Total number of elements including the missing one
 
-    expected_sum = n * (n + 1) // 2  # Sum of first n natural numbers
+#     expected_sum = n * (n + 1) // 2  # Sum of first n natural numbers
 
-    actual_sum = sum(numbers)  # Sum of the given list
+#     actual_sum = sum(numbers)  # Sum of the given list
 
-    missing_number = expected_sum - actual_sum  # The missing number is the difference
+#     missing_number = expected_sum - actual_sum  # The missing number is the difference
 
-    return missing_number
+#     return missing_number
 
 # Example usage:
 
-numbers = [1, 2, 3, 4, 6, 7, 8, 9, 10]  # Missing number is 5
+# numbers = [1, 2, 3, 4, 6, 7, 8, 9, 10]  # Missing number is 5
 
-missing_number = find_missing_number(numbers)
+# missing_number = find_missing_number(numbers)
 
-print("The missing number is:", missing_number)
+# print("The missing number is:", missing_number)
 
 #perform union and intersection on 2 given list:
 
-list1 = [1, 2, 3, 4, 5]
-list2 = [4, 5, 6, 7, 8]
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [4, 5, 6, 7, 8]
 
-union = []
-intersection = []
+# union = []
+# intersection = []
 
-for x in list1:
-    if x not in union:
-        union.append(x)
+# for x in list1:
+#     if x not in union:
+#         union.append(x)
 
-for x in list2:
-    if x not in union:
-        union.append(x)        
+# for x in list2:
+#     if x not in union:
+#         union.append(x)        
 
-    print(union)
+#     print(union)
 
-for x in list1:
-    if x in list2 and x not in intersection:
-        intersection.append(x)
+# for x in list1:
+#     if x in list2 and x not in intersection:
+#         intersection.append(x)
 
-print(intersection)        
+# print(intersection)
+
+#write program remove duplicate characters:
+
+def remove_duplicates(s):
+    result = ""
+    for ch in s :
+        if ch not in result:
+            result += ch
+    return result
+
+print(remove_duplicates("programming"))  # Output: "progamin"

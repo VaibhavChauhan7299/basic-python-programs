@@ -269,11 +269,23 @@
 
 #write program remove duplicate characters:
 
-def remove_duplicates(s):
-    result = ""
-    for ch in s :
-        if ch not in result:
-            result += ch
-    return result
+# def remove_duplicates(s):
+#     result = ""
+#     for ch in s :
+#         if ch not in result:
+#             result += ch
+#     return result
 
-print(remove_duplicates("programming"))  # Output: "progamin"
+# print(remove_duplicates("programming"))  # Output: "progamin"
+
+#write a proram from a list of numbers, move zero to the end of the list.
+
+# list = [0, 1, 2, 0, 3, 4, 0, 5]
+
+# for item in list:
+#     if item == 0:
+
+#         list.remove(item)
+#         list.append(item)
+
+# print(list)        

@@ -221,3 +221,18 @@
 # largest_number = max(numbers)
 
 # print("The largest number in the list is:", largest_number)
+
+#interview question: Write a program to find the missing number in a list of consecutive numbers:
+
+def find_missing_number(numbers):
+    n = len(numbers) + 1  # Total number of elements including the missing one
+    expected_sum = n * (n + 1) // 2  # Sum of first n natural numbers
+    actual_sum = sum(numbers)  # Sum of the given list
+    missing_number = expected_sum - actual_sum  # The missing number is the difference
+    return missing_number
+
+# Example usage:
+
+numbers = [1, 2, 3, 4, 6, 7, 8, 9, 10]  # Missing number is 5
+missing_number = find_missing_number(numbers)
+print("The missing number is:", missing_number)

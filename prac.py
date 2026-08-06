@@ -222,7 +222,7 @@
 
 # print("The largest number in the list is:", largest_number)
 
-#interview question: Write a program to find the missing number in a list of consecutive numbers:
+##interview question: Write a program to find the missing number in a list of consecutive numbers:
 
 # def find_missing_number(numbers):
 #     n = len(numbers) + 1  # Total number of elements including the missing one
@@ -267,7 +267,7 @@
 
 # print(intersection)
 
-#write program remove duplicate characters:
+##write program remove duplicate characters:
 
 # def remove_duplicates(s):
 #     result = ""
@@ -278,7 +278,7 @@
 
 # print(remove_duplicates("programming"))  # Output: "progamin"
 
-#write a proram from a list of numbers, move zero to the end of the list.
+##write a proram from a list of numbers, move zero to the end of the list.
 
 # list = [0, 1, 2, 0, 3, 4, 0, 5]
 
@@ -289,3 +289,13 @@
 #         list.append(item)
 
 # print(list)        
+
+#reverse string:
+
+# str = "Vaibhav Chauhan"
+# str1 = ""
+
+# for i in str:
+#     str1 = i + str1
+
+# print(str1)

@@ -299,3 +299,25 @@
 #     str1 = i + str1
 
 # print(str1)
+
+#write a function to compress a string using Run-Length Encoding (RLE). The function should take a string as input and return the compressed version of the string. For example, the input "aaabbbcc" should return "a3b3c2".
+
+text = "aaabbbcc"
+
+def compress(text):
+    result = ""
+    count = 1
+
+    for i in range(len(text) - 1):
+        if text[i] == text[i + 1]:
+            count += 1
+        else:
+            result += text[i] + str(count)
+            count = 1
+
+                
+    result = result + text[-1] + str(count)  # Add the last character and its count
+
+    return result
+
+print(compress(text))

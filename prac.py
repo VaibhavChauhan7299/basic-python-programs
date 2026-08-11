@@ -321,3 +321,25 @@
 #     return result
 
 # print(compress(text))
+
+
+#write a program to find the longest common prefix among a list of strings. If there is no common prefix, return an empty string.
+
+def longest_common_prefix(strings):
+    if not strings:
+        return ""
+
+    prefix = strings[0]
+
+    for string in strings[1:]:
+        while not string.startswith(prefix):
+            prefix = prefix[:-1]
+            if not prefix:
+                return ""
+
+    return prefix
+
+# Example usage:
+strings = ["flower", "flow", "flight"]
+result = longest_common_prefix(strings)
+print("The longest common prefix is:", result)  # Output: "fl"

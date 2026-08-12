@@ -343,3 +343,25 @@ def longest_common_prefix(strings):
 strings = ["flower", "flow", "flight"]
 result = longest_common_prefix(strings)
 print("The longest common prefix is:", result)  # Output: "fl"
+
+
+#write a program to find the first non-repeating character in a string. If all characters are repeating, return None.
+
+def first_non_repeating_character(s):
+    char_count = {}
+    
+    # Count occurrences of each character
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+
+    # Find the first non-repeating character
+    for char in s:
+        if char_count[char] == 1:
+            return char
+
+    return None
+
+# Example usage:
+text = "abccba"
+result = first_non_repeating_character(text)
+print("The first non-repeating character is:", result)  # Output: None

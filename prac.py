@@ -300,7 +300,7 @@
 
 # print(str1)
 
-#write a function to compress a string using Run-Length Encoding (RLE). The function should take a string as input and return the compressed version of the string. For example, the input "aaabbbcc" should return "a3b3c2".
+##write a function to compress a string using Run-Length Encoding (RLE). The function should take a string as input and return the compressed version of the string. For example, the input "aaabbbcc" should return "a3b3c2".
 
 # text = "aaabbbcc"
 
@@ -323,45 +323,45 @@
 # print(compress(text))
 
 
-#write a program to find the longest common prefix among a list of strings. If there is no common prefix, return an empty string.
+##write a program to find the longest common prefix among a list of strings. If there is no common prefix, return an empty string.
 
-def longest_common_prefix(strings):
-    if not strings:
-        return ""
+# def longest_common_prefix(strings):
+#     if not strings:
+#         return ""
 
-    prefix = strings[0]
+#     prefix = strings[0]
 
-    for string in strings[1:]:
-        while not string.startswith(prefix):
-            prefix = prefix[:-1]
-            if not prefix:
-                return ""
+#     for string in strings[1:]:
+#         while not string.startswith(prefix):
+#             prefix = prefix[:-1]
+#             if not prefix:
+#                 return ""
 
-    return prefix
+#     return prefix
 
-# Example usage:
-strings = ["flower", "flow", "flight"]
-result = longest_common_prefix(strings)
-print("The longest common prefix is:", result)  # Output: "fl"
+# # Example usage:
+# strings = ["flower", "flow", "flight"]
+# result = longest_common_prefix(strings)
+# print("The longest common prefix is:", result)  # Output: "fl"
 
 
-#write a program to find the first non-repeating character in a string. If all characters are repeating, return None.
+##write a program to find the first non-repeating character in a string. If all characters are repeating, return None.
 
-def first_non_repeating_character(s):
-    char_count = {}
+# def first_non_repeating_character(s):
+#     char_count = {}
     
-    # Count occurrences of each character
-    for char in s:
-        char_count[char] = char_count.get(char, 0) + 1
+#     # Count occurrences of each character
+#     for char in s:
+#         char_count[char] = char_count.get(char, 0) + 1
 
-    # Find the first non-repeating character
-    for char in s:
-        if char_count[char] == 1:
-            return char
+#     # Find the first non-repeating character
+#     for char in s:
+#         if char_count[char] == 1:
+#             return char
 
-    return None
+#     return None
 
 # Example usage:
-text = "abccba"
-result = first_non_repeating_character(text)
-print("The first non-repeating character is:", result)  # Output: None
+# text = "abccba"
+# result = first_non_repeating_character(text)
+# print("The first non-repeating character is:", result)  # Output: None

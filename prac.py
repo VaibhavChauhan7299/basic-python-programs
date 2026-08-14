@@ -368,20 +368,40 @@
 
 ##count how many numbers fall into each range(bin)of the given size and store the result in a directory. :
 
-numbers = [2, 5, 7, 8, 10, 12, 15, 18, 20, 22, 25]
+# numbers = [2, 5, 7, 8, 10, 12, 15, 18, 20, 22, 25]
 
-bin_size = int(input("Enter the bin size: "))
+# bin_size = int(input("Enter the bin size: "))
 
-histogram = {}
+# histogram = {}
 
-for num in numbers:
-    bin_start = (num // bin_size) * bin_size
-    bin_end = bin_start + bin_size - 1
-    bin_range = str(bin_start) + "-" + str(bin_end)
+# for num in numbers:
+#     bin_start = (num // bin_size) * bin_size
+#     bin_end = bin_start + bin_size - 1
+#     bin_range = str(bin_start) + "-" + str(bin_end)
 
-    if bin_range in histogram:
-        histogram[bin_range] = histogram[bin_range] + 1
-    else:
-        histogram[bin_range] = 1
+#     if bin_range in histogram:
+#         histogram[bin_range] = histogram[bin_range] + 1
+#     else:
+#         histogram[bin_range] = 1
 
-print("Histogram:", histogram)        
+# print("Histogram:", histogram)        
+
+##write a program ton Transpose a matrix.
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+result = []
+
+for i in range(len(matrix[0])):
+    row = []
+
+    for j in range(len(matrix)):
+        row.append(matrix[j][i])
+
+    result.append(row)
+
+print(result)  # Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]

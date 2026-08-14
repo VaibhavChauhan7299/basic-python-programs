@@ -388,43 +388,43 @@
 
 ##write a program ton Transpose a matrix.
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
-result = []
+# result = []
 
-for i in range(len(matrix[0])):
-    row = []
+# for i in range(len(matrix[0])):
+#     row = []
 
-    for j in range(len(matrix)):
-        row.append(matrix[j][i])
+#     for j in range(len(matrix)):
+#         row.append(matrix[j][i])
 
-    result.append(row)
+#     result.append(row)
 
-print(result)  # Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+# print(result)  # Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 
 ##Check whether two dictionaries are equal without using == operator:
 
-dict1 = {'a': 1, 'b': 2, 'c': 3}
-dict2 = {'c': 3, 'b': 2, 'a': 1}
+# dict1 = {'a': 1, 'b': 2, 'c': 3}
+# dict2 = {'c': 3, 'b': 2, 'a': 1}
 
-def check_equal(dict1, dict2):
-    if len(dict1) != len(dict2):
-        return False
+# def check_equal(dict1, dict2):
+#     if len(dict1) != len(dict2):
+#         return False
 
-    for key in dict1:
-        if key not in dict2:
-            return False
+#     for key in dict1:
+#         if key not in dict2:
+#             return False
 
-        if dict1[key] != dict2[key]:
-            return False
+#         if dict1[key] != dict2[key]:
+#             return False
 
-    return True
+#     return True
 
-if check_equal(dict1, dict2) is True:
-    print("Both are equal")
-else:
-    print("Both are not equal")    
+# if check_equal(dict1, dict2) is True:
+#     print("Both are equal")
+# else:
+#     print("Both are not equal")    

@@ -431,9 +431,26 @@
 
 ##write a program to repeated Alphabet Triangle.
 
-rows = int(input("Enter the number of rows: "))
+# rows = int(input("Enter the number of rows: "))
 
-for i in range(1, rows + 1):
-    for j in range(i):
-        print(chr(64 + i), end=" ")
-    print()
+# for i in range(1, rows + 1):
+#     for j in range(i):
+#         print(chr(64 + i), end=" ")
+#     print()
+
+
+##find all duplicate elements in a list along with their frequncies.:
+
+lst = [1, 2, 3, 4, 5, 2, 3, 4, 4, 5]
+
+feq = {}
+
+for i in lst:
+    if i in feq:
+        feq[i] = feq[i] + 1
+    else:
+        feq[i] = 1
+
+ for key in feq:
+    if feq[key] > 1:
+        print(key, ":", feq[key]):      

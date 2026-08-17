@@ -441,16 +441,16 @@
 
 ##find all duplicate elements in a list along with their frequncies.:
 
-lst = [1, 2, 3, 4, 5, 2, 3, 4, 4, 5]
+# lst = [1, 2, 3, 4, 5, 2, 3, 4, 4, 5]
 
-feq = {}
+# feq = {}
 
-for i in lst:
-    if i in feq:
-        feq[i] = feq[i] + 1
-    else:
-        feq[i] = 1
+# for i in lst:
+#     if i in feq:
+#         feq[i] = feq[i] + 1
+#     else:
+#         feq[i] = 1
 
- for key in feq:
-    if feq[key] > 1:
-        print(key, ":", feq[key]):      
+#  for key in feq:
+#     if feq[key] > 1:
+#      print(key, ":", feq[key])     

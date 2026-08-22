@@ -457,24 +457,24 @@
 
 ##write a function to rotate a square matrix 90 degrees clockwise.
 
-mat = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# mat = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
 
-def rotate_matrix(mat):
+# def rotate_matrix(mat):
 
-    for i in range(len(mat)):
-        for j in range(i + 1, len(mat)):
-            mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
+#     for i in range(len(mat)):
+#         for j in range(i + 1, len(mat)):
+#             mat[i][j], mat[j][i] = mat[j][i], mat[i][j]
 
-    for row in mat:
-        row.reverse()
+#     for row in mat:
+#         row.reverse()
 
-        return mat
+#         return mat
 
-print(rotate_matrix(mat))  # Output: [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+# print(rotate_matrix(mat))  # Output: [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
 """"
 ##intervie question:
                     if[]:

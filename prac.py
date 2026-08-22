@@ -475,3 +475,11 @@ def rotate_matrix(mat):
         return mat
 
 print(rotate_matrix(mat))  # Output: [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+""""
+##intervie question:
+                    if[]:
+                        print("yes")
+                    else:
+                        print("no")
+                        """
+## ans is no beacause empty list is considered as false in python.

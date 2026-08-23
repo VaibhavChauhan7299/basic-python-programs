@@ -502,3 +502,15 @@ def sum_of_primes(start, end):
     return total
 
 print(sum_of_primes(1, 10))  # Output: 17 (2 + 3 + 5 + 7)
+
+##python program to display the Fibonacci sequence up to a given number of terms:
+
+def fibonacci_sequence(n):
+    sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+print(fibonacci_sequence(10))  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]

@@ -525,3 +525,12 @@ def is_armstrong_number(num):
 
 print(is_armstrong_number(153))  # Output: True
 print(is_armstrong_number(123))  # Output: False
+
+#python program to find the GCD (Greatest Common Divisor) of two numbers using the Euclidean algorithm:
+
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+print(gcd(48, 18))  # Output: 6

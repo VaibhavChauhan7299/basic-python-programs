@@ -486,47 +486,47 @@
 
 ##python program to find the sum of all prime numbers in a given range:
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
 
-def sum_of_primes(start, end):
-    total = 0
-    for n in range(start, end + 1):
-        if is_prime(n):
-            total += n
-    return total
+# def sum_of_primes(start, end):
+#     total = 0
+#     for n in range(start, end + 1):
+#         if is_prime(n):
+#             total += n
+#     return total
 
-print(sum_of_primes(1, 10))  # Output: 17 (2 + 3 + 5 + 7)
+# print(sum_of_primes(1, 10))  # Output: 17 (2 + 3 + 5 + 7)
 
 ##python program to display the Fibonacci sequence up to a given number of terms:
 
-def fibonacci_sequence(n):
-    sequence = []
-    a, b = 0, 1
-    for _ in range(n):
-        sequence.append(a)
-        a, b = b, a + b
-    return sequence
+# def fibonacci_sequence(n):
+#     sequence = []
+#     a, b = 0, 1
+#     for _ in range(n):
+#         sequence.append(a)
+#         a, b = b, a + b
+#     return sequence
 
-print(fibonacci_sequence(10))  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+# print(fibonacci_sequence(10))  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 
 ##python program to check if a given number is an Armstrong number:
 
-def is_armstrong_number(num):
-    num_str = str(num)
-    num_len = len(num_str)
-    total = sum(int(digit) ** num_len for digit in num_str)
-    return total == num
+# def is_armstrong_number(num):
+#     num_str = str(num)
+#     num_len = len(num_str)
+#     total = sum(int(digit) ** num_len for digit in num_str)
+#     return total == num
 
-print(is_armstrong_number(153))  # Output: True
-print(is_armstrong_number(123))  # Output: False
+# print(is_armstrong_number(153))  # Output: True
+# print(is_armstrong_number(123))  # Output: False
 
-#python program to find the GCD (Greatest Common Divisor) of two numbers using the Euclidean algorithm:
+##python program to find the GCD (Greatest Common Divisor) of two numbers using the Euclidean algorithm:
 
 def gcd(a, b):
     while b:
@@ -534,3 +534,10 @@ def gcd(a, b):
     return a
 
 print(gcd(48, 18))  # Output: 6
+
+##python program to find the LCM (Least Common Multiple) of two numbers:
+
+def lcm(a, b):
+    return abs(a * b) // gcd(a, b)
+
+print(lcm(4, 5))  # Output: 20

@@ -528,16 +528,25 @@
 
 ##python program to find the GCD (Greatest Common Divisor) of two numbers using the Euclidean algorithm:
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
+# def gcd(a, b):
+#     while b:
+#         a, b = b, a % b
+#     return a
 
-print(gcd(48, 18))  # Output: 6
+# print(gcd(48, 18))  # Output: 6
 
 ##python program to find the LCM (Least Common Multiple) of two numbers:
 
-def lcm(a, b):
-    return abs(a * b) // gcd(a, b)
+# def lcm(a, b):
+#     return abs(a * b) // gcd(a, b)
 
-print(lcm(4, 5))  # Output: 20
+# print(lcm(4, 5))  # Output: 20
+
+##python program to check if a given string is a valid palindrome, considering only alphanumeric characters and ignoring cases:
+
+def is_valid_palindrome(s):
+    s = ''.join(c.lower() for c in s if c.isalnum())
+    return s == s[::-1]
+
+print(is_valid_palindrome("A man, a plan, a canal: Panama"))  # Output: True
+print(is_valid_palindrome("race a car"))  # Output: False

@@ -563,3 +563,20 @@ def pascal_triangle(n):
     return triangle
 
 print(pascal_triangle(5))  # Output: [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
+
+##python program to display all prime numbers within an interval:
+
+lower = 100
+upper = 120
+
+print("Prime numbers between", lower, "and", upper, "are:")
+
+for num in range(lower, upper + 1):
+    #all prime numbers are greater than 1
+
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num)

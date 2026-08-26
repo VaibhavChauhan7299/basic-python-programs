@@ -544,9 +544,22 @@
 
 ##python program to check if a given string is a valid palindrome, considering only alphanumeric characters and ignoring cases:
 
-def is_valid_palindrome(s):
-    s = ''.join(c.lower() for c in s if c.isalnum())
-    return s == s[::-1]
+# def is_valid_palindrome(s):
+#     s = ''.join(c.lower() for c in s if c.isalnum())
+#     return s == s[::-1]
 
-print(is_valid_palindrome("A man, a plan, a canal: Panama"))  # Output: True
-print(is_valid_palindrome("race a car"))  # Output: False
+# print(is_valid_palindrome("A man, a plan, a canal: Panama"))  # Output: True
+# print(is_valid_palindrome("race a car"))  # Output: False
+
+##python program to display the Pascal's triangle up to a given number of rows:
+
+def pascal_triangle(n):
+    triangle = []
+    for i in range(n):
+        row = [1] * (i + 1)
+        for j in range(1, i):
+            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+        triangle.append(row)
+    return triangle
+
+print(pascal_triangle(5))  # Output: [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]

@@ -553,30 +553,30 @@
 
 ##python program to display the Pascal's triangle up to a given number of rows:
 
-def pascal_triangle(n):
-    triangle = []
-    for i in range(n):
-        row = [1] * (i + 1)
-        for j in range(1, i):
-            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
-        triangle.append(row)
-    return triangle
+# def pascal_triangle(n):
+#     triangle = []
+#     for i in range(n):
+#         row = [1] * (i + 1)
+#         for j in range(1, i):
+#             row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+#         triangle.append(row)
+#     return triangle
 
-print(pascal_triangle(5))  # Output: [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
+# print(pascal_triangle(5))  # Output: [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
 
 ##python program to display all prime numbers within an interval:
 
-lower = 100
-upper = 120
+# lower = 100
+# upper = 120
 
-print("Prime numbers between", lower, "and", upper, "are:")
+# print("Prime numbers between", lower, "and", upper, "are:")
 
-for num in range(lower, upper + 1):
+# for num in range(lower, upper + 1):
     #all prime numbers are greater than 1
 
-    if num > 1:
-        for i in range(2, num):
-            if (num % i) == 0:
-                break
-        else:
-            print(num)
+    # if num > 1:
+    #     for i in range(2, num):
+    #         if (num % i) == 0:
+    #             break
+    #     else:
+    #         print(num)

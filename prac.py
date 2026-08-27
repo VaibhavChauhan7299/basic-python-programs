@@ -580,3 +580,47 @@
     #             break
     #     else:
     #         print(num)
+
+##write a python program to dungeon game where the player has to navigate through a maze and collect treasures while avoiding traps. The player can move in four directions (up, down, left, right) and the game ends when the player reaches the exit or falls into a trap.
+
+def dungeon_game():
+    maze = [
+        ['S', '.', '.', 'T', '.'],
+        ['.', 'T', '.', '.', '.'],
+        ['.', '.', 'T', 'T', '.'],
+        ['.', '.', '.', '.', 'E']
+    ]
+    
+    player_pos = [0, 0]  # Starting position (row, col)
+    treasures_collected = 0
+    
+    while True:
+        print_maze(maze, player_pos)
+        move = input("Enter your move (up, down, left, right): ").strip().lower()
+        
+        if move == "up":
+            new_pos = [player_pos[0] - 1, player_pos[1]]
+        elif move == "down":
+            new_pos = [player_pos[0] + 1, player_pos[1]]
+        elif move == "left":
+            new_pos = [player_pos[0], player_pos[1] - 1]
+        elif move == "right":
+            new_pos = [player_pos[0], player_pos[1] + 1]
+        else:
+            print("Invalid move. Try again.")
+            continue
+        
+        if is_valid_move(maze, new_pos):
+            player_pos = new_pos
+            if maze[player_pos[0]][player_pos[1]] == 'T':
+                treasures_collected += 1
+                maze[player_pos[0]][player_pos[1]] = '.'  # Collect treasure
+                print(f"You collected a treasure! Total treasures: {treasures_collected}")
+            elif maze[player_pos[0]][player_pos[1]] == 'E':
+                print(f"You reached the exit! Total treasures collected: {treasures_collected}")
+                break
+            elif maze[player_pos[0]][player_pos[1]] == 'T':
+                print("You fell into a trap! Game over.")
+                break
+        else:
+            print("You can't move there. Try again.")

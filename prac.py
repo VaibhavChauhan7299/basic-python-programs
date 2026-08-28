@@ -658,3 +658,8 @@
 #         left -= 1
 #         right += 1
 #     return right - left - 1
+
+# Example usage:
+# input_string = "babad"
+# result = longest_palindromic_substring(input_string)
+# print("The longest palindromic substring is:", result)  # Output: "bab" or "aba"

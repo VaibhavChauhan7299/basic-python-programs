@@ -663,3 +663,19 @@
 # input_string = "babad"
 # result = longest_palindromic_substring(input_string)
 # print("The longest palindromic substring is:", result)  # Output: "bab" or "aba"
+
+##write a program to find the first missing positive integer in an unsorted list of integers. The function should return the smallest positive integer that is not present in the list.
+
+def first_missing_positive(nums):
+    nums = set(nums)  # Convert the list to a set for O(1) lookups
+    i = 1  # Start checking from the smallest positive integer
+
+    while True:
+        if i not in nums:
+            return i  # Return the first missing positive integer
+        i += 1  # Increment to check the next positive integer
+
+# Example usage:
+nums = [3, 4, -1, 1]
+result = first_missing_positive(nums)
+print("The first missing positive integer is:", result)  # Output: 2

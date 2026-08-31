@@ -679,3 +679,23 @@
 # nums = [3, 4, -1, 1]
 # result = first_missing_positive(nums)
 # print("The first missing positive integer is:", result)  # Output: 2
+
+##write a program to find the longest substring without repeating characters in a given string. The function should return the length of the longest substring.
+
+def longest_substring_without_repeating(s):
+    char_index = {}
+    start = max_length = 0
+
+    for i, char in enumerate(s):
+        if char in char_index and char_index[char] >= start:
+            start = char_index[char] + 1  # Move the start to the right of the last occurrence
+        char_index[char] = i  # Update the last occurrence of the character
+        max_length = max(max_length, i - start + 1)  # Update the maximum length
+
+    return max_length
+
+# Example usage:
+input_string = "abcabcbb"
+result = longest_substring_without_repeating(input_string)
+print("The length of the longest substring without repeating characters is:", result)  # Output:
+

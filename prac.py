@@ -701,29 +701,29 @@
 
 ##write a function to find the maximum occuring character in a string. The function should return the character that appears the most frequently in the string.
 
-text = "banana"
+# text = "banana"
 
-def max_occurring_char(s):
-    if not s:
-        return ""
+# def max_occurring_char(s):
+#     if not s:
+#         return ""
 
-    freq = {}
+#     freq = {}
 
-    for char in s:
-        if char in freq:
-            freq[char] += 1
-        else:
-            freq[char] = 1
+#     for char in s:
+#         if char in freq:
+#             freq[char] += 1
+#         else:
+#             freq[char] = 1
 
-    max_char = ""
-    max_count = 0
+#     max_char = ""
+#     max_count = 0
 
-    for char in freq:
-        if freq[char] > max_count:
-            max_count = freq[char]
-            max_char = char
+#     for char in freq:
+#         if freq[char] > max_count:
+#             max_count = freq[char]
+#             max_char = char
 
-    return max_char
+#     return max_char
 
 
-print(max_occurring_char(text))  # Output: "a"
+# print(max_occurring_char(text))  # Output: "a"

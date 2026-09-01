@@ -699,3 +699,31 @@
 # result = longest_substring_without_repeating(input_string)
 # print("The length of the longest substring without repeating characters is:", result)  # Output:
 
+##write a function to find the maximum occuring character in a string. The function should return the character that appears the most frequently in the string.
+
+text = "banana"
+
+def max_occurring_char(s):
+    if not s:
+        return ""
+
+    freq = {}
+
+    for char in s:
+        if char in freq:
+            freq[char] += 1
+        else:
+            freq[char] = 1
+
+    max_char = ""
+    max_count = 0
+
+    for char in freq:
+        if freq[char] > max_count:
+            max_count = freq[char]
+            max_char = char
+
+    return max_char
+
+
+print(max_occurring_char(text))  # Output: "a"

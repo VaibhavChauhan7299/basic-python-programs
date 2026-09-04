@@ -741,23 +741,23 @@
 
 ##write a program to find the longest common prefix among a list of strings. If there is no common prefix, return an empty string.
 
-def longest_common_prefix(strs):
-    if not strs:
-        return ""
+# def longest_common_prefix(strs):
+#     if not strs:
+#         return ""
 
-    prefix = ""
-    min_length = min(len(s) for s in strs)
+#     prefix = ""
+#     min_length = min(len(s) for s in strs)
 
-    for i in range(min_length):
-        char = strs[0][i]
-        if all(s[i] == char for s in strs):
-            prefix += char
-        else:
-            break
+#     for i in range(min_length):
+#         char = strs[0][i]
+#         if all(s[i] == char for s in strs):
+#             prefix += char
+#         else:
+#             break
 
-    return prefix
+#     return prefix
 
-print(longest_common_prefix(["flower", "flow", "flight"]))  # Output: "fl"
+# print(longest_common_prefix(["flower", "flow", "flight"]))  # Output: "fl"
 # Example usage:
 # strings = ["flower", "flow", "flight"]
 # result = longest_common_prefix(strings)

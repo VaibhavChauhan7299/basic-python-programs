@@ -765,17 +765,17 @@
 
 ##write a function to find the longest word in a sentence without using max().
 
-def find_long(text):
-    size = 0 
-    long_word = ""
+# def find_long(text):
+#     size = 0 
+#     long_word = ""
 
-    for i in text.split():
-        n = len(i)
+#     for i in text.split():
+#         n = len(i)
 
-        if n > size:
-            size = n
-            long_word = i
+#         if n > size:
+#             size = n
+#             long_word = i
 
-    return long_word
+#     return long_word
 
-print(find_long("The quick brown fox jumps over the lazy dog"))  # Output: "jumps"
+# print(find_long("The quick brown fox jumps over the lazy dog"))  # Output: "jumps"

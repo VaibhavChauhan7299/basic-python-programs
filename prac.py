@@ -779,3 +779,14 @@
 #     return long_word
 
 # print(find_long("The quick brown fox jumps over the lazy dog"))  # Output: "jumps"
+
+###write a function to find the longest word in a sentence using max().
+
+def find_longest_word(sentence):
+
+    words = sentence.split()
+    longest_word = max(words, key=len)
+    return longest_word
+
+print(find_longest_word("The quick brown fox jumps over the lazy dog jermanshepherd")) 
+

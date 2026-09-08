@@ -793,22 +793,21 @@
 
 ##write a function to find the longest consecutive sequence of 1s in a binary values.(example:[1,1,0,1,1,1,0,1] should return 3)
 
-num = [1, 1, 0, 1, 1, 1, 0]
+# num = [1, 1, 0, 1, 1, 1, 0]
 
-count = 0
-max = 0
+# count = 0
+# max = 0
 
-for n in num:
-    if n == 1:
-        count = count + 1
+# for n in num:
+#     if n == 1:
+#         count = count + 1
 
-        if count > max:
-         max = count
-    else:
-        count = 0
+#         if count > max:
+#          max = count
+#     else:
+#         count = 0
 
-print(max)
-
+# print(max)
 
 ##write a bubble sort program to sort a list of numbers in ascending order.
 

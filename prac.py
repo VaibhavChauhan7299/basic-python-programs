@@ -790,6 +790,26 @@
 
 # print(find_longest_word("The quick brown fox jumps over the lazy dog jermanshepherd")) 
 
+
+##write a function to find the longest consecutive sequence of 1s in a binary values.(example:[1,1,0,1,1,1,0,1] should return 3)
+
+num = [1, 1, 0, 1, 1, 1, 0]
+
+count = 0
+max = 0
+
+for n in num:
+    if n == 1:
+        count = count + 1
+
+        if count > max:
+         max = count
+    else:
+        count = 0
+
+print(max)
+
+
 ##write a bubble sort program to sort a list of numbers in ascending order.
 
 # def bubble_sort(arr):
@@ -844,3 +864,4 @@
 # numbers = [38, 27, 43, 3, 9, 82, 10]
 # sorted_numbers = merge_sort(numbers)
 # print("Sorted list:", sorted_numbers)  
+

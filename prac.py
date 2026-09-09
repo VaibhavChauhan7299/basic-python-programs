@@ -762,3 +762,4 @@
 # strings = ["flower", "flow", "flight"]
 # result = longest_common_prefix(strings)
 # print("The longest common prefix is:", result)  # Output: "fl"
+

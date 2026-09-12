@@ -899,3 +899,20 @@
 # numbers = [64, 25, 12, 22, 11]
 # sorted_numbers = selection_sort(numbers)
 # print("Sorted list:", sorted_numbers)  # Output: [11, 12, 22, 25, 64]
+
+##write a program to quick sort to sort a list of numbers in ascending order.
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quick_sort(left) + middle + quick_sort(right)
+
+# Example usage:
+numbers = [3, 6, 8, 10, 1, 2, 1]
+sorted_numbers = quick_sort(numbers)
+print("Sorted list:", sorted_numbers)  # Output: [1, 1, 2, 3, 6, 8, 10]     

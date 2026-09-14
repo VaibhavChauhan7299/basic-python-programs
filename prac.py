@@ -954,18 +954,18 @@
 
 ## Remove duplicate characters from a string while maintaining their original order.
 
-text = "programming"
+# text = "programming"
 
-def remove_duplicates(s):
-    result = ""
-    seen = set()
+# def remove_duplicates(s):
+#     result = ""
+#     seen = set()
 
-    for char in s:
-        if char not in seen:
-            seen.add(char)
-            result += char
+#     for char in s:
+#         if char not in seen:
+#             seen.add(char)
+#             result += char
 
-    return result
+#     return result
 
-print(remove_duplicates(text))  # Output: "progamin"
+# print(remove_duplicates(text))  # Output: "progamin"
                                 

@@ -952,5 +952,20 @@
 # sorted_numbers = heap_sort(numbers)
 # print("Sorted list:", sorted_numbers)  # Output: [5, 6, 7, 11, 12, 13]
 
+## Remove duplicate characters from a string while maintaining their original order.
 
+text = "programming"
+
+def remove_duplicates(s):
+    result = ""
+    seen = set()
+
+    for char in s:
+        if char not in seen:
+            seen.add(char)
+            result += char
+
+    return result
+
+print(remove_duplicates(text))  # Output: "progamin"
                                 

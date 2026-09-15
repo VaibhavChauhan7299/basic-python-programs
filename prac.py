@@ -968,4 +968,16 @@
 #     return result
 
 # print(remove_duplicates(text))  # Output: "progamin"
-                                
+
+## Function to rotate a list to the right by k positions.
+# Example: [1, 2, 3, 4, 5] rotated by 2 positions becomes [4, 5, 1, 2, 3].
+
+nums = [1, 2, 3, 4, 5]
+k = 2
+
+def rotate_right(nums, k):
+    #k = k % len(nums)  # Handle cases where k is greater than the length of the list
+
+    return nums[-k:] + nums[:-k]
+
+print(rotate_right(nums, k))  # Output: [4, 5, 1, 2, 3]

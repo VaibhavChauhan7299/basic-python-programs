@@ -982,3 +982,30 @@
 
 # print(rotate_right(nums, k))  # Output: [4, 5, 1, 2, 3]
 
+##find the top 2 highest values in a dictionary.
+
+sales = {
+    'A': 5000,
+    'B': 8000,
+    'C': 3000,
+    'D': 7000
+}
+
+first = 0
+second = 0
+
+first_name = ""
+second_name = ""
+
+for name, value in sales.items():
+    if value > first:
+        second = first
+        second_name = first_name
+        first = value
+        first_name = name
+    elif value > second:
+        second = value
+        second_name = name
+
+print(first_name, "has the highest sales with", first)
+print(second_name, "has the second highest sales with", second)

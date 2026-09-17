@@ -1013,19 +1013,19 @@
 
 ## Merge two dictionaries and add values for common keys.
 
-dict1 = {'a': 100, 'b': 200, 'c': 300}
-dict2 = {'a': 300, 'b': 200, 'd': 400}
+# dict1 = {'a': 100, 'b': 200, 'c': 300}
+# dict2 = {'a': 300, 'b': 200, 'd': 400}
 
-result = {}
+# result = {}
 
-for key in dict1:
-    if key in dict2:
-        result[key] = dict1[key] + dict2[key]
-    else:
-        result[key] = dict1[key]
+# for key in dict1:
+#     if key in dict2:
+#         result[key] = dict1[key] + dict2[key]
+#     else:
+#         result[key] = dict1[key]
 
-for key in dict2:
-    if key not in result:
-        result[key] = dict2[key]
+# for key in dict2:
+#     if key not in result:
+#         result[key] = dict2[key]
 
-print(result)  # Output: {'a': 400, 'b': 400, 'c': 300, 'd': 400}
+# print(result)  # Output: {'a': 400, 'b': 400, 'c': 300, 'd': 400}

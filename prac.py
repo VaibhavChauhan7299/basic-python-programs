@@ -1032,14 +1032,14 @@
 
 ## Reverse the words in a sentence , not the characters.
 
-words = "Python is a great programming language"
+# words = "Python is a great programming language"
 
-words = words.split()
+# words = words.split()
 
-result = ""
+# result = ""
 
-for i in range(len(words)-1, -1, -1):
-    result += words[i] + " "
+# for i in range(len(words)-1, -1, -1):
+#     result += words[i] + " "
 
-print(result)    
+# print(result)    
 

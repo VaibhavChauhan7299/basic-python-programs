@@ -1029,3 +1029,17 @@
 #         result[key] = dict2[key]
 
 # print(result)  # Output: {'a': 400, 'b': 400, 'c': 300, 'd': 400}
+
+## Reverse the words in a sentence , not the characters.
+
+words = "Python is a great programming language"
+
+words = words.split()
+
+result = ""
+
+for i in range(len(words)-1, -1, -1):
+    result += words[i] + " "
+
+print(result)    
+

@@ -1075,3 +1075,16 @@
 #     result[key] = value
 
 # print(result)  # Output: {'a': 100, 'b': 200, 'c': 300}    
+
+## Find common elements from both lists without duplicates.
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+
+result = []
+
+for num in list1:
+    if num in list2 and num not in result:
+        result.append(num)
+
+print(result)  # Output: [4, 5]        

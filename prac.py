@@ -1062,16 +1062,16 @@
 
 ## Convert a list of tuples into a dictionary.(using loop, not dict(data))
 
-data = {
-    ('a', 100),
-    ('b', 200),
-    ('c', 300)
-}
+# data = {
+#     ('a', 100),
+#     ('b', 200),
+#     ('c', 300)
+# }
 
-result = {}
+# result = {}
 
-for key, value in data:
+# for key, value in data:
 
-    result[key] = value
+#     result[key] = value
 
-print(result)  # Output: {'a': 100, 'b': 200, 'c': 300}    
+# print(result)  # Output: {'a': 100, 'b': 200, 'c': 300}    

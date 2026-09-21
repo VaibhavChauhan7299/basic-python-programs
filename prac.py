@@ -1091,18 +1091,18 @@
 
 ##write a program to find the average of numbers in a list without using sum() or len() functions.
 
-numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-total = 0
-count = 0
+# total = 0
+# count = 0
 
-for n in numbers:
-    total += n
-    count += 1
+# for n in numbers:
+#     total += n
+#     count += 1
 
-if count > 0:
-    average = total / count
-else:
-    average = 0
+# if count > 0:
+#     average = total / count
+# else:
+#     average = 0
 
-print(average)  # Output: 55.0
+# print(average)  # Output: 55.0
